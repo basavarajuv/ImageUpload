@@ -1,0 +1,18 @@
+{% load static %}
+<div class="row">
+    {% for obj in res %}
+        <div class="col-md-4 col-sm-6">
+            <div class="team-wrapper">
+                <div class="team-img">
+                    <img src="{{ obj.image_file.url }}" class="img-responsive" alt="Image">
+                </div>
+                <div class="team-title">
+                    <h3>
+                        <a href="#">{{ obj.category }}</a>
+                    </h3>
+                </div>
+            </div>
+    {% endfor %}
+    </div>
+</div>
+
